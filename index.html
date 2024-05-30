@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- vinculación al css externo -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./static/img/BitCoin.ico" type="image/x-icon">
+    <title>Crypto-Mundo, información para principiantes</title>
+    <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <!-- Logo -->
+            <div id="logo">
+                <a href="./index.html"><i class="fa-brands fa-bitcoin">&nbsp;</i><span class="logo-text">Crypto-Mundo</span></a>
+            </div>
+
+            <!-- Menu de navegación -->
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#">Información</a>
+                    <ul class="submenu">
+                        <li><a href="#tendencias">Tendencias</a></li>
+                        <li><a href="https://www.coingecko.com/es" target="_blank" title="Haz clic para ver las cotizaciones">Cotizaciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="login-text">Inicio de Sesión</span></a></li>
+                <li><a href="./templates/register.html" class="btn-reg">Registrarse</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido -->
+    <main>
+        <section id="banner" class="d-flex">
+            <div class="card-banner container">
+                <h1>Todo sobre criptomonedas en un sólo lugar</h1>
+                <br><br>
+                <h2>No te quedes afuera del futuro.
+                    <br>
+                     ¡ Invierte tiempo en educarte !
+                </h2>
+                
+            </div>
+         
+        </section>
+
+
+
+          <!-- tendencias: mostrar criptomonedas en tendencia hoy -->
+          <section id="tendencias">
+            <!-- División contenedora del titulo y criptomonedas -->
+            <h2>Las tendencias de hoy</h2> <!-- Título movido arriba de las imágenes -->
+            <div class="container criptos-grid">
+                
+                <!-- Div para mostrar todas las criptomonedas -->
+                <div id="list-tendencias" class="image-container">
+                    <!-- criptomoneda 01 -->
+                    <div class="cripto-item">
+                        <a href="./templates/bitcoin.html">
+                            <img src="./static/img/BTC.jpg" alt="Bitcoin" class="cripto-item-img">
+                            <span class="title">Bitcoin</span>
+                        </a>
+                    </div>
+                    <!-- criptomoneda 02 -->
+                    <div class="cripto-item">
+                        <a href="./templates/tether.html">
+                            <img src="./static/img/estable.jpg" alt="Estable" class="cripto-item-img">
+                            <span class="title">Tether</span>
+                        </a>
+                    </div>
+                    <!-- criptomoneda 03 -->
+                    <div class="cripto-item">
+                        <a href="./templates/ethereum.html">
+                            <img src="./static/img/ETH.jpg" alt="Ethereum" class="cripto-item-img">
+                            <span class="title">Ethereum</span>
+                        </a>
+                    </div>
+                    <!-- criptomoneda 04 -->
+                    <div class="cripto-item">
+                        <a href="./templates/solana.html">
+                            <img src="./static/img/SOL.jpg" alt="Solana" class="cripto-item-img">
+                            <span class="title">Solana</span>
+                        </a>
+                    </div>
+                  
+                    
+            </div>
+        </div>
+        </section>
+
+                           
+                     
+                       
+    </main>   
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="text-container">
+                <h3>¿Le interesa estar al día de lo que sucede con las criptomonedas?</h3>
+                <p>Suscríbase a nuestro boletín informativo gratuito y reciba las últimas noticias, actualizaciones e informes sobre el mundo de las criptomonedas.</p>
+            </div>
+            <form action="" method="get" class="crypto-search">
+                <input type="text" placeholder="Introduzca su correo electrónico..." class="input-mail">
+                <input type="submit" value="Suscribirse" class="btn-subs">
+            </form>
+        </div>
+    </footer>
+
+</body>
+</html>

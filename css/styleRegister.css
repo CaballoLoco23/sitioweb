@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b1111;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 5% auto;
+    padding: 10px;
+    background-color: #bebab0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px; 
+    color: #f49d6b;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    animation: pulse 1s infinite alternate; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1); 
+    }
+  }
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: rgb(15, 228, 15);
+    padding: 10px;
+    border-radius: 10px;
+    color:#FFF;
+    
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    color:grey !important;
+    border: 1px solid rgb(52, 84, 5);
+}
+
+/* Media queries para dispositivos */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    input[type="date"] {
+        font-size: 14px;
+    }
+}
+
+
+
+.register-home {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.volver-inicio {
+    font-size: 16px;
+    color: #222cc5;
+    text-decoration: none;
+    margin-left: 600px;
+  }
+  
+  .volver-inicio:hover {
+    text-decoration: underline; 
+  }
